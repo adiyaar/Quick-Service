@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sharp_dev.quick_service">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.sharp_dev.quick_service.Activity.ProfileEdit"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.sharp_dev.quick_service.Activity.ForgotPassActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.sharp_dev.quick_service.Activity.OTPActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.sharp_dev.quick_service.Activity.PasswordResetActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.sharp_dev.quick_service.Activity.RechargePlan" />
+        <activity
+            android:name="com.sharp_dev.quick_service.Activity.OrderSuccessfull"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.sharp_dev.quick_service.Activity.PanPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.sharp_dev.quick_service.Activity.GstPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.sharp_dev.quick_service.Activity.BankEdit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.sharp_dev.quick_service.Activity.AfterBankEdit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.sharp_dev.quick_service.Activity.AfterGstPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.sharp_dev.quick_service.Activity.BookingConfirm" />
+        <activity android:name="com.sharp_dev.quick_service.Activity.StartJob" />
+        <activity
+            android:name="com.sharp_dev.quick_service.Activity.ServiceDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.sharp_dev.quick_service.Activity.MainActivity_Sp"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.sharp_dev.quick_service.Activity.LoginSignupActivity_Sp"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.sharp_dev.quick_service.Activity.Razorpay" />
+        <activity android:name="com.sharp_dev.quick_service.Activity.RechargePaymentMethod" />
+
+
+        <service android:name="com.sharp_dev.quick_service.Constants.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.sharp_dev.customer.Extra.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_vr1VMGjHU3wjoq" /> <!-- rzp_test_7fnnn7WTaard4h -->
+        <activity android:name="com.sharp_dev.ChooserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.sharp_dev.customer.WalkThroughActivity" />
+        <activity android:name="com.sharp_dev.customer.LoginActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.sharp_dev.customer.OTPActivity" />
+        <activity android:name="com.sharp_dev.customer.HomePageActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.sharp_dev.customer.SubCategoryActivity" />
+        <activity android:name="com.sharp_dev.customer.WalkThroughActivity2" />
+        <activity android:name="com.sharp_dev.customer.ServicesListActivity" />
+        <activity android:name="com.sharp_dev.customer.ReviewRatingActivity" />
+        <activity android:name="com.sharp_dev.customer.ServicesFullDetails" />
+        <activity android:name="com.sharp_dev.customer.Cart_Activity" />
+        <activity android:name="com.sharp_dev.customer.OffersActivity" />
+        <activity android:name="com.sharp_dev.customer.SelectAddressActivity" />
+        <activity android:name="com.sharp_dev.customer.EditAddressActivity" />
+        <activity android:name="com.sharp_dev.customer.ScheduleTimeDateActivity" />
+        <activity android:name="com.sharp_dev.customer.PaymentActivityy1" />
+        <activity android:name="com.sharp_dev.customer.OrderSucessActivity" />
+        <activity android:name="com.sharp_dev.customer.BridalMakupPaymentActivity" />
+        <activity android:name="com.sharp_dev.customer.BridalMakupOrderSuccessActivity" />
+        <activity android:name="com.sharp_dev.customer.AcSevenPaymentActivity" />
+        <activity android:name="com.sharp_dev.customer.AcOrderSuccessActivity" />
+        <activity android:name="com.sharp_dev.customer.LocationActivity" />
+        <activity android:name="com.sharp_dev.customer.SearchingActivity" />
+        <activity android:name="com.sharp_dev.customer.Razorpay" />
+        <activity android:name="com.sharp_dev.customer.PayPal" />
+        <activity android:name="com.sharp_dev.customer.ConfirmationActivity" />
+        <activity android:name="com.sharp_dev.customer.OTPsignupActivity"></activity>
+
+        <activity android:name="com.sharp_dev.customer.PopularServicesActivity"></activity>
+        <activity android:name="com.sharp_dev.customer.LocationActivity1" />
+        <activity android:name="com.sharp_dev.customer.Rating_review" />
+        <activity android:name="com.sharp_dev.customer.Delivery_date_time" />
+        <activity android:name="com.sharp_dev.customer.Add_on_Activity" />
+        <activity android:name="com.sharp_dev.customer.Payment_order_activty" />
+        <activity android:name="com.sharp_dev.customer.Reschdule_activity" />
+        <activity android:name="com.sharp_dev.customer.Manage_address" />
+        <activity android:name="com.sharp_dev.customer.BookingCancellationActivity" />
+        <activity android:name="com.sharp_dev.customer.FaqlastActivity" />
+        <activity android:name="com.sharp_dev.customer.FaqMiddleActivity" />
+        <activity android:name="com.sharp_dev.customer.EditProfileActivity" />
+        <activity android:name="com.sharp_dev.customer.TermsConditionActivity" />
+        <activity android:name="com.sharp_dev.customer.AboutUsActivity" />
+        <activity android:name="com.sharp_dev.customer.FAQmain_Activity" />
+        <activity android:name="com.sharp_dev.customer.NotificationActivity" />
+        <activity android:name="com.sharp_dev.customer.AddAddressmainActivity" />
+        <activity android:name="com.sharp_dev.customer.PasswordResetActivity" />
+        <activity android:name="com.sharp_dev.customer.ForgotPassActivity" />
+        <activity android:name="com.sharp_dev.customer.SignUpActivity" />
+    </application>
+
+</manifest>

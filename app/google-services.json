@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1016665656304",
+    "project_id": "quick-service-3201e",
+    "storage_bucket": "quick-service-3201e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016665656304:android:cd61d855282c3cbd4c6b35",
+        "android_client_info": {
+          "package_name": "com.sharp_dev.quick_service"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016665656304-0ts08i9crq99f6trj6eeloi7dv68fc35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhOnulVvWYYiVFIagzCiLX5cpF8waFPYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016665656304-0ts08i9crq99f6trj6eeloi7dv68fc35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
